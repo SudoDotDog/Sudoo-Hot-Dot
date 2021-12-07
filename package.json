@@ -1,0 +1,36 @@
+{
+	"name": "@sudoo/hot-dot",
+	"version": "1.0.0",
+	"description": "Hot Dot Pattern",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SudoDotDog/Sudoo-Hot-Dot.git"
+	},
+	"author": "WMXPY",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SudoDotDog/Sudoo-Hot-Dot/issues"
+	},
+	"homepage": "https://github.com/SudoDotDog/Sudoo-Hot-Dot#readme",
+	"devDependencies": {
+		"@sudoo/build-utils": "^1.0.0",
+		"@sudoo/license": "^1.1.0",
+		"@sudoo/triforce": "^2.16.1"
+	},
+	"nyc": {
+		"extension": [
+			".ts"
+		],
+		"include": [
+			"script/**/*.ts",
+			"src/**/*.ts"
+		],
+		"instrument": true,
+		"reporter": [
+			"json",
+			"text-summary"
+		],
+		"report-dir": "coverage",
+		"sourceMap": true
+	}
+}
